@@ -1,0 +1,22 @@
+body
+{
+  background-color: #fafafa;
+}
+
+#layout
+{
+  max-width: 960px;
+  margin: auto;
+}
+
+.header > .box
+{
+  padding: 2em 1em;
+}
+
+.content > .box
+{
+  padding: 2em;
+  background-color: #fff;
+  border-radius: 0.5em;
+}

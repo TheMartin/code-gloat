@@ -1,0 +1,11 @@
+baseurl: "http://themartin.github.io/code-gloat"
+
+markdown: redcarpet
+highlighter: pygments
+redcarpet:
+  extensions:
+    - footnotes
+    - hard_wrap
+    - no_intra_emphasis
+    - autolink
+    - strikethrough
