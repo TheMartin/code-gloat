@@ -1,6 +1,39 @@
 body
 {
   background-color: #fafafa;
+  color: #777;
+  line-height: 1.5;
+}
+
+p, aside
+{
+  text-align: justify;  
+}
+
+p
+{
+  font-size: 1.125em;
+}
+
+a
+{
+  text-decoration: none;
+  color: #38b;
+}
+
+a:visited
+{
+  color: #257;
+}
+
+a:hover, a:active, a:focus
+{
+  color: #5ae;
+}
+
+h1, h2, h3, h4, h5, h6
+{
+  color: #4a4a4a;
 }
 
 #layout
@@ -19,4 +52,25 @@ body
   padding: 2em;
   background-color: #fff;
   border-radius: 0.5em;
+  box-shadow: 0 0 1em #ddd;
+}
+
+aside
+{
+  padding: 1em;
+  border-radius: 0.5em;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 0.5em #ddd;
+}
+
+.image-container
+{
+  text-align: center;
+}
+
+.image-container > img
+{
+  border-radius: 0.5em;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 0.5em #ddd;  
 }

@@ -9,3 +9,5 @@ redcarpet:
     - no_intra_emphasis
     - autolink
     - strikethrough
+
+excerpt-separator: <!--more-->

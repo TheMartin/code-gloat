@@ -2,12 +2,22 @@
 layout : default
 ---
 
-{% capture main %}
-# Příspěvky
+<h1>Co je <code>code gloat</code></h1>
 
+<p>Kromě toho, že jde o třeskutě vtipnou <a href="https://en.wikipedia.org/wiki/Code_bloat">slovní</a> <a href="http://dictionary.reference.com/browse/gloat">hříčku</a>?</p>
+
+<p>Stejně jako mnoho dalších programátorů i já mám svůj nekonečný víkendový projekt. Stejně jako mnoho dalších programátorů, co pracují na počítačových hrách, i můj víkendový projekt je herní engine. No a kromě toho jsem ten typ, co jednak strašně rád poučuje, a druhak se strašně rád kochá tím, co napsal. <code>code gloat</code> je pro mě způsob, jak spojit příjemné s příjemným, příjemným a užitečným, a když se během práce na enginu dozvím něco zajímavého -- nebo nedejbože vymyslím něco chytrého -- tak mám místo, kde se o to můžu podělit. Programování je dost technická záležitost, ale budu se snažit psát svoje články tak, aby něco přinesly i ne-programátorům. Pokud se mi to nepodaří (anebo pokud se mi to podaří a chcete mě za to pochválit), stačí mi střelit <a href="mailto:mart.nsochor@gmail.com">e-mail</a>.</p>
+
+<hr />
+
+<h1>Nejnovější příspěvky</h1>
+
+<ul>
 {% for post in site.posts %}
-* {{ post.date | date: "%d.%m.%Y" }} - [{{ post.title }}]({{ site.baseurl }}{{ post.url }})
+  <li>
+    <h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
+    <p>{{ post.date | date: "%d.%m.%Y" }}</p>
+    <p>{{ post.excerpt | remove: "<p>" | remove: "</p>" }}</p>
+  </li>
 {% endfor %}
-
-{% endcapture %}
-{{ main || markdownify }}
+</ul>
